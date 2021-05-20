@@ -716,10 +716,10 @@ export class ConnectionTCP {
     async connect(host?: string, port?: number) {
         this._debug && console.log('[node-vmix]', 'Attempting to establish TCP socket connection to vMix instance', `${this._host}:${this._port}`)
 
-        if (this.connected()) {
-            this._debug && console.log('[node-vmix]', 'TCP socket connection to vMix instance was already established...', `${this._host}:${this._port}`)
-            return
-        }
+        // if (this.connected()) {
+        //     this._debug && console.log('[node-vmix]', 'TCP socket connection to vMix instance was already established...', `${this._host}:${this._port}`)
+        //     return
+        // }
 
         if (host) {
             this._setHost(host)
